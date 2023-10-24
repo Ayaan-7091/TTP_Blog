@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock title %}
+
+
+{% block body %}
+
+<div class="container-custom box-post">
+
+    <h3>{{cats.title}}</h3>
+
+    <div class="image-container">
+        <img src="/media/{{cats.image}}" class="responsive-img" id="cat-image">
+    </div>
+</div>
+
+<div class="container-custom box-post">
+    <div class="collection cat-collection">
+        <p id="cat-posts">POSTS REGARDING : {{cats.title}}</p>
+        {%for p in posts%}
+        <a href="/blog/{{p.url}}" class="collection-item"><li id="cat-posts-title">{{p.title}}</li></a>
+
+        {%empty%}
+
+        <img src="/static/images/Warn.png" style="height: 30px;width: 30px; margin-bottom: -2px; margin-left: 35%;margin-right: 6px;" alt=""><b style="color: red;font-size: 30px;">NO POSTS IN THIS CATEGORY</b>
+        {%endfor%}
+    </div>
+
+</div>
+
+
+
+
+{% endblock %}

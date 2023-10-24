@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | {% block title %}{% endblock title %}</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Balthazar&family=Bree+Serif&family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    {%load static%}
+
+    <link rel="stylesheet" href="../static/css/style.css">
+
+    <!-- CSS FOR OWL CAROUSEL -->
+
+     <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css'%}">
+     <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css'%}">
+</head>
+<body>
+    {%include 'header.html' %}
+ {% block body %}{% endblock body %}
+
+    {%include 'footer.html'%}
+
+
+    <script>
+        M.AutoInit();
+    </script>
+
+    <!-- js for owl carousel  -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    
+<script src="{%static 'js/owl.carousel.min.js'%}"></script>
+<script>
+    $(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:4,
+            nav:true,
+            loop:false
+        }
+    }
+  });
+});
+</script>
+</body>
+</html>

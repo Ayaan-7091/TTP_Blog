@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock title %}
+
+
+{% block body %}
+
+    <div class="container-custom">
+        <div class="owl-carousel">
+           
+            {%for c in cat%}
+
+            <div class="card category">
+                <div class="img-container">
+                    <img src="media/{{c.image}}" class="responsive-img ">
+                </div>
+
+                <div class="card-content">
+                    <div class="card-title">
+                        {{c.title}}
+                    </div>
+                    <p class="truncate">{{c.description}}</p>
+
+                    <div class="card-button center-align">
+                       <a href="/blog/category/{{c.url}}"><div class="btn ">View</div></a> 
+                    </div>
+                </div>
+            </div>
+
+
+
+            {%endfor%}
+          </div>
+        
+
+    </div>
+
+   
+    <div class="container ">
+        <div class="row">
+            <div class="col s12">
+
+                
+                {%for p in post%}
+                <div class="row box">
+
+                    <div class="col s12 m8">
+
+                      {{p.content |truncatewords:60|safe}}
+                      <br><small>({{p.cat.title}})  </small>
+
+                        <div class="button">
+                            <a href="/blog/{{p.url}}" class="btn ">Read More</a>
+               
+                        </div>
+
+                        
+                     </div>
+                     <div class="col s12 m4">
+                        <img src="/media/{{p.image}}" alt="" class="responsive-img image">
+                    </div>
+                 </div>
+                {%endfor%}
+
+             
+
+               
+             </div>
+        </div>
+    </div>
+{% endblock body %}

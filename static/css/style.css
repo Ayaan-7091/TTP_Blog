@@ -1,0 +1,156 @@
+body{
+    background-image: url('../images/bg8.png');
+  
+}
+
+#bg-nav{
+    background-color: rgb(255, 255, 255);
+    margin: 0px auto;
+    width: 50vw;
+    /* border-radius: 10px; */
+    color: black;
+    background-color: #fb2f2f;
+    font-family: 'Bree Serif', serif;
+   padding-left: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-bottom: 35px;
+    
+ 
+}
+
+.button{
+    margin-top: 20px;
+}
+
+.btn{
+    background-color: #fb2f2f;
+}
+
+.btn:hover{
+    background-color: #000000;
+}
+
+.brand-logo{
+    margin-left: 15px;
+    /* padding: 10px; */
+    padding: 1px;
+    /* border: 3px solid black; */
+    border-radius: 15px;
+    font-size: 15px;
+  
+}
+
+
+.container-custom{
+    width: 90%;
+    margin: auto;
+}
+
+.box{
+    background-color: rgb(255, 255, 255);
+    z-index: 55;
+    /* border: 3px solid black; */
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: padding .5s;
+    margin-top: 25px;
+
+}
+
+.box:hover{
+    /* padding: 30px; */
+    background-color: #0000002a;
+}
+
+.box-post{
+    background-color: rgb(255, 255, 255);
+    z-index: 55;
+    /* border: 3px solid black; */
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: padding .5s;
+
+
+}
+
+.image{
+    border-radius: 15px;
+}
+
+.img-container>img{
+    height: 200px;
+    width: 200px;
+    border-top-right-radius: 13px;
+    border-top-left-radius: 13px;
+}
+
+.card-button{
+
+    
+    margin: 10px;
+
+}
+
+.category{
+    border-radius: 15px;
+    margin-left: 10px;
+    
+}
+
+.drop-list{
+    
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+#drop-text{
+    color: rgb(255, 0, 0);
+}
+
+#cat-image{
+    max-height: 450px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.cat-collection{
+    border-radius: 13px;
+}
+
+#cat-posts{
+    /* margin: 5px; */
+    margin-top: 0px;
+    margin-bottom: 9px;
+    font-size: 25px;
+    background-color: #ff0202;
+    border-top-right-radius: 13px;
+    border-top-left-radius: 13px;
+    color: #ffffff;
+    padding: 5px;
+}
+
+
+
+#cat-posts-title{
+    color: #000000;
+    margin-top: 1px;
+}
+
+.img-container-post>img{
+    max-height: 120px;
+    width: 100%;
+    object-fit: cover;
+    border-top-right-radius: 13px;
+    border-top-left-radius: 13px;
+}
+
+.card-content-post{
+    height: 50px;
+}
+
